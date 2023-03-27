@@ -1,8 +1,64 @@
 body{
     color: #222;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
- .grande{
-    background-color: blueviolet;
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-item{
+    flex-grow: 1;
+    margin: 20px;
+    border: 1px solid #000;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    cursor: pointer;
+    transition: all box-shadow 2s ease;
+}
+
+.flex-item:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #d9bc17;
+}
+.flex-item:focus{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #d9bc17;
+}
+
+.llave-img{
+    max-width: 300px;
+}
+
+.flex-item > h2, h3, p
+{
+    padding: 0 20px;
+}
+
+h3{
+    color: rgb(135, 134, 134);
+}
+
+b{
+    color: #2a7b1e;
+}
+
+form{
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+}
+
+input[type="submit"]{ 
+    background: #2a7b1e;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    padding: 12px 28px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
